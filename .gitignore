@@ -1,0 +1,19 @@
+# docx
+~$*.docx
+
+# sbt
+# (may want to keep parts of 'project')
+bin/
+project/
+target/
+build/
+.bsp
+
+# other?
+.history
+.scala_dependencies
+.cache
+.cache-main
+
+#general
+*.class
