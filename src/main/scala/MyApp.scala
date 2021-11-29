@@ -44,7 +44,7 @@ object MyApp extends JFXApp {
 
   // Initialize Stage
   stage = new PrimaryStage() {
-    title = "Mittere"
+    title = "Chatty"
     scene = new Scene() {
       root = joinScreen
     }
@@ -86,7 +86,7 @@ object MyApp extends JFXApp {
 
   def showMain(){
     stage = new PrimaryStage() {
-      title = "Mittere"
+      title = "Chatty"
       scene = new Scene() {
         root = main
       }

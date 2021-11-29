@@ -1,4 +1,4 @@
-name := "Mittere"
+name := "Chatty"
 version := "1.0"
 scalaVersion := "2.12.3"
 cancelable in Global := true
