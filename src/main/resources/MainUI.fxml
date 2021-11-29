@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #34374d;" stylesheets="MainUI.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #34374d;" stylesheets="MainUI.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="600.0" prefWidth="600.0" />
@@ -27,22 +27,22 @@
    <children>
       <AnchorPane>
          <children>
-            <Label alignment="CENTER" style="-fx-background-color: #34374d;" text="Mittere" textFill="#fafafc" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Label alignment="CENTER" style="-fx-background-color: #292826;" text="Chatty" textFill="#fafafc" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <font>
                   <Font name="Hiragino Kaku Gothic StdN W8" size="24.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane style="-fx-background-color: #54577c;" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
+      <AnchorPane style="-fx-background-color: #292826;" GridPane.hgrow="NEVER" GridPane.rowIndex="1">
          <children>
-            <VBox prefHeight="432.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: #54577c;">
+            <VBox prefHeight="432.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: #292826;">
                <children>
                   <VBox>
                      <children>
                         <Label prefHeight="35.0" prefWidth="196.0" text="Rooms" textFill="#fafafc">
                            <font>
-                              <Font name="Hiragino Kaku Gothic StdN W8" size="14.0" />
+                              <Font size="20.0" />
                            </font>
                            <VBox.margin>
                               <Insets bottom="9.0" left="20.0" right="20.0" top="10.0" />
@@ -63,7 +63,7 @@
                      <children>
                         <Label prefHeight="29.0" prefWidth="196.0" text="All users" textFill="#fafafc">
                            <font>
-                              <Font name="Hiragino Kaku Gothic StdN W8" size="14.0" />
+                              <Font size="20.0" />
                            </font>
                            <VBox.margin>
                               <Insets bottom="9.0" left="20.0" right="20.0" />
@@ -81,11 +81,11 @@
             </VBox>
          </children>
       </AnchorPane>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #34374d;" GridPane.rowIndex="2">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #292826;" GridPane.rowIndex="2">
          <children>
             <Button fx:id="createRoomButton" mnemonicParsing="false" onAction="#createRoom" prefHeight="26.0" prefWidth="100.0" styleClass="btn" text="Create Room" textFill="#fafafc">
                <font>
-                  <Font name="Hiragino Kaku Gothic StdN W8" size="9.0" />
+                  <Font size="9.0" />
                </font></Button>
             <Button fx:id="quitButton" mnemonicParsing="false" onAction="#handleQuit" prefHeight="26.0" prefWidth="50.0" styleClass="btn" text="Quit" textFill="#fafafc">
                <font>
@@ -93,36 +93,36 @@
                </font></Button>
          </children>
       </HBox>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #54577c;" GridPane.columnIndex="1">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #292826;" GridPane.columnIndex="1">
          <children>
-            <Label fx:id="roomNameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="560.0" text="Select a user to start chatting" textAlignment="CENTER" textFill="#fafafc">
+            <Label fx:id="roomNameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="560.0" text="Please Select Your Chatty" textAlignment="CENTER" textFill="WHITE">
                <font>
-                  <Font name="Hiragino Kaku Gothic StdN W8" size="14.0" />
+                  <Font size="30.0" />
                </font>
             </Label>
-            <Label fx:id="descriptionLabel" alignment="CENTER" prefHeight="20.0" prefWidth="560.0" textFill="#fafafc">
+            <Label fx:id="descriptionLabel" alignment="CENTER" prefHeight="20.0" prefWidth="560.0" textFill="WHITE">
                <font>
-                  <Font name="Helvetica Neue" size="12.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
          </children>
       </VBox>
-      <ListView fx:id="messageList" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #34374D;" styleClass="mylistview" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <ListView fx:id="messageList" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #292826;" styleClass="mylistview" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding></ListView>
-      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #54577c;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #292826;" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
             <TextArea fx:id="messageArea" disable="true" minHeight="0.0" minWidth="0.0" onKeyPressed="#handleTyped" prefHeight="26.0" prefWidth="540.0" promptText="Type a message" wrapText="true">
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
-               <font>
-                  <Font name="Helvetica Neue" size="11.0" />
-               </font>
                <padding>
                   <Insets bottom="2.0" top="2.0" />
                </padding>
+               <font>
+                  <Font size="12.0" />
+               </font>
             </TextArea>
          </children>
       </VBox>

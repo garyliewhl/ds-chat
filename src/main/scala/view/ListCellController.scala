@@ -70,7 +70,7 @@ class ListCellController(
 
 
   def highlight(){
-    outerContainer.setStyle("-fx-background-color:#34374d;")
+    outerContainer.setStyle("-fx-background-color:#9c6700;")
   }
   def removeHighlight(){
     outerContainer.setStyle("-fx-background-color:Transparent;")
